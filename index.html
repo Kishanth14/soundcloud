@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+	<title>Sound Cloud Music</title>
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet"
+		type="text/css">
+	<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+	<link rel="stylesheet" href="style.css">
+
+
+	<title>sound cloud music player</title>
+	<script src="//connect.soundcloud.com/sdk.js"></script>
+	<style>
+		button:hover {
+			background-color: aquamarine;
+			vertical-align: auto;
+
+
+			border-radius: 10px;
+		}
+
+
+
+		img {
+			height: 260px;
+			width: 300px;
+		}
+
+		.center {
+			margin: 0;
+			position: absolute;
+			top: 80%;
+			left: 50%;
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+
+		}
+
+
+		#black {
+			background-color: black;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<script src="jquery-3.3.1.js"></script>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="main.js"></script>
+	<div id="site-content">
+		<header class="site-header">
+			<div class="container">
+
+				<img style="width:100px;height:50px; float: left;;" src="img/crop.jpeg" alt="Site Title">
+				<h3 class="site-description">Music Collections</h3>
+				</a> <!-- #branding -->
+
+				<nav class="main-navigation">
+					<button type="button" class="toggle-menu"><i class="fa fa-bars"></i></button>
+					<ul class="menu">
+
+
+						<!-- <li class="menu-item current-menu-item">Album</li> -->
+
+
+
+					</ul> <!-- .menu -->
+				</nav> <!-- .main-navigation -->
+				<div class="mobile-menu"></div>
+			</div>
+		</header> <!-- .site-header -->
+
+		<main class="main-content">
+			<!-- <div class="fullwidth-block gallery"> -->
+			<div class="container">
+				<div class="content fullwidth">
+					<!-- <h2 class="entry-title">Album</h2> -->
+					<div class="filter-links filterable-nav">
+						<select class="mobile-filter">
+							<option value="*">Show all</option>
+							<option value=".concert">Concert</option>
+							<option value=".band">Band</option>
+							<option value=".stuff">Stuff</option>
+						</select>
+						<a href="#" class="current" data-filter="*">Show all</a>
+						<a href="#" data-filter=".concert">Concert</a>
+						<a href="#" data-filter=".band">Band</a>
+						<a href="#" data-filter=".stuff">Stuff</a>
+					</div>
+
+					<div class="filterable-items">
+
+						<div class="filterable-item concert">
+
+							<a href="img/Vannam.jpg">
+								<figure><img src="img/Vannam.jpg" alt="gallery 1"><br><br><br></figure><br>
+								<div class="center">
+
+									<button id="start1">Start</button>
+									<button id="stop1">Stop</button>
+							</a>
+						</div>
+					</div>
+					<div class="filterable-item concert">
+						<a href="img/then.jpeg">
+							<figure><img src="img/then.jpeg" alt="gallery 2"><br><br><br></figure>
+							<br>
+							<div class="center">
+								<button id="start2">Start</button>
+								<button id="stop2">Stop</button>
+						</a>
+					</div>
+				</div>
+				<div class="filterable-item stuff">
+					<a href="img/Rahman.jpg">
+						<figure><img src="img/Rahman.jpg" alt="gallery 3"><br><br><br></figure>
+						<br>
+						<div class="center">
+							<button id="start3">Start</button>
+							<button id="stop3">Stop</button>
+					</a>
+				</div>
+			</div>
+			<div class="filterable-item concert">
+				<a href="img/kannana.jpeg">
+					<figure><img style="height:300;width:260;" src="img/kannana.jpeg" alt="gallery 4"><br><br><br>
+					</figure>
+					<br>
+					<div class="center">
+						<button id="start4">Start</button>
+						<button id="stop4">Stop</button>
+				</a>
+			</div>
+	</div>
+	<div class="filterable-item band">
+		<a href="img/usure.jpeg">
+			<figure><img style="height:300;width:260;" src="img/usure.jpeg" alt="gallery 5"><br><br><br></figure>
+			<br>
+			<div class="center">
+				<button id="start5">Start</button>
+				<button id="stop5">Stop</button>
+		</a>
+	</div>
+	</div>
+	<div class="filterable-item stuff">
+		<a href="img/SPB.jpg">
+			<figure><img style="height:300;width:260;" src="img/SPB.jpg" alt="gallery 6"><br><br><br></figure>
+			<br>
+			<div class="center">
+				<button id="start6">Start</button>
+				<button id="stop6">Stop</button>
+		</a>
+	</div>
+	</div>
+	<div class="filterable-item concert">
+		<a href="img/kaatu.jpeg">
+			<figure><img src="img/kaatu.jpeg" alt="gallery 7"><br><br><br></figure>
+			<br>
+			<div class="center">
+				<button id="start7">Start</button>
+				<button id="stop7">Stop</button>
+		</a>
+	</div>
+	</div>
+	<div class="filterable-item band">
+		<a href="img/Kabaaru.jpg">
+			<figure><img src="img/Kabaaru.jpg" alt="gallery 8"><br><br><br></figure>
+			<br>
+			<div class="center">
+				<button id="start8">Start</button>
+				<button id="stop8">Stop</button>
+		</a>
+	</div>
+	</div>
+
+	</div>
+
+	</div>
+	</div>
+	</div> <!-- .testimonial-section -->
+
+
+	</main> <!-- .main-content -->
+
+	<footer class="site-footer">
+		<div class="container">
+
+
+			<address>
+				<p>Kannathiddy Road , Jaffna, Srilanka</p> <br><a href="tel:0776310083">+94 0764255558</a> <br> <a
+					href="kishantharulselvan14@gmail.com">kishantharulselvan14@gmail.com</a></p>
+			</address>
+
+
+			<div class="social-links">
+				<a href="#"><i class="fa fa-github-square"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<!-- <a href="#"><img src="./images/blog.svg"  style="width: 45px; height: 30px; color: white;"/></i></i></a>
+				<a href="#"><i class="fa fa-pinterest"></i></a> -->
+			</div> <!-- .social-links -->
+
+			<p class="text-muted">Copyright 2021 Sound Cloud Music. Designed by kishantharulselvan. All right reserved
+			</p>
+		</div>
+	</footer> <!-- .site-footer -->
+
+	</div> <!-- #site-content -->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+
+</html>
